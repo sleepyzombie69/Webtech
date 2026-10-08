@@ -1,0 +1,242 @@
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --text: #1f2937;
+    --border: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;  padding: 40px 16px;
+ font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;    color: var(--text);
+ background: linear-gradient(135deg, #e0e7ff 0%, #f5f3ff 100%); min-height: 100vh;
+}
+.page {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.small {
+    font-size: 13px;
+    margin: 8px 0;
+}
+.gray {
+    color: #777;
+}
+
+.steps {
+    max-width: 640px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.req {
+    color: #ef4444;
+}
+
+
+h3 {
+    margin: 24px 0 10px;
+    font-size: 20px;
+    color: var(--primary);
+}
+
+
+
+form {
+  max-width: 640px;
+ margin: 0 auto;
+    padding: 32px;
+ background: #fff;
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+
+table {
+  width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    width: 38%;
+  padding: 8px 12px 8px 0;
+  text-align: right;
+  font-size: 14px;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+td {
+ padding: 6px 0;
+ font-size: 14px;
+}
+
+
+.hint {
+ font-size: 12px;
+ font-weight: normal;
+ color: #6b7280;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+   padding: 11px 14px;
+  font-size: 14px;
+    font-family: inherit;
+  color: var(--text);
+    background: #f9fafb;
+  border: 1px solid var(--border);
+    border-radius: 8px;
+   transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+input.wide {
+    width: 100%;
+}
+
+input.tiny {
+    width: 70px;
+}
+select {
+   cursor: pointer;
+}
+
+select.wide {
+ width: 100%;
+}
+textarea {
+  min-height: 100px;
+ resize: vertical;
+}
+input:focus,
+textarea:focus,
+select:focus {
+ outline: none;
+ background: #fff;
+ border-color: var(--primary);
+ box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.18);
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+ margin: 0 4px 0 0;
+ vertical-align: middle;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+td label,
+.checks label {
+    display: inline-block;
+    margin: 0 18px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+label {
+    font-size: 14px;
+}
+.checks {
+    margin: 14px 0;
+    line-height: 1.8;
+}
+.indent {
+    margin-left: 38%;
+    margin-top: 0;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+   background: var(--border);
+   margin: 24px 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input {
+    padding: 12px 28px;
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+}
+
+
+.buttons input[type="submit"] {
+    background: var(--primary);
+    color: #fff;
+}
+.buttons input[type="submit"]:hover {
+    background: var(--primary-dark);
+}
+
+
+.buttons input[type="reset"] {
+    background: #e5e7eb;
+    color: var(--text);
+}
+
+.buttons input[type="reset"]:hover {
+    background: #d1d5db;
+}
+
+
+.buttons input[type="submit"]:active,
+.buttons input[type="reset"]:active {
+    transform: scale(0.98);
+}
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+  form {
+      padding: 22px 18px;
+    }
+  th {
+      width: 35%;
+        font-size: 12px;
+   }
+
+   td {
+        font-size: 12px;
+    }
+    input[type="text"],
+   input[type="email"],
+    input[type="tel"],
+   select,
+ textarea {
+        width: 100%;
+  }
+  .indent {
+       margin-left: 0;
+ }
+
+ .buttons input {
+        padding: 10px 20px;
+    }
+}
